@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Max Kiselyov](https://up.htmlacademy.ru/htmlcss/30/user/1696347).
-* Наставник: `Неизвестно`.
+* Наставник: [Ольга Вадясова](https://htmlacademy.ru/profile/ad0v0).
 
 ---
 
