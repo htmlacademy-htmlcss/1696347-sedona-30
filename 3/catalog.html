@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Гостиницы | Седона</title>
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/fav-32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/fav-apple-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <base href="https://htmlacademy-htmlcss.github.io/1696347-sedona-30/3/">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Фото и видео</a></li>
+        <li><a href="#">Карта штата</a></li>
+        <li><a href="catalog.html">Гостиницы</a></li>
+      </ul>
+      <a href="index.html"><img src="img/icons/logo.svg" width="138" height="70" alt="Логотип сайта"></a>
+    </nav>
+  </header>
+  <main>
+    <h1>Каталог гостиниц</h1>
+    <section>
+      <h2>Фильтр</h2>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="swim-pool" id="filter-swim-pool" checked>
+              <label for="filter-swim-pool">Бассейн</label>
+            </li>
+            <li>
+              <input type="checkbox" name="parking" id="filter-parking">
+              <label for="filter-parking">Парковка</label>
+            </li>
+            <li>
+              <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+              <label for="filter-wi-fi">WI-FI</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="hotel" id="filter-hotel" checked>
+              <label for="filter-hotel">Гостиница</label>
+            </li>
+            <li>
+              <input type="checkbox" name="motel" id="filter-motel" checked>
+              <label for="filter-motel">Мотель</label>
+            </li>
+            <li>
+              <input type="checkbox" name="apartments" id="filter-apartments" checked>
+              <label for="filter-apartments">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость в сутки(Р):</legend>
+          <p>
+            <input type="text" name="from-sum" placeholder="ОТ 0">
+            <input type="text" name="up-sum" placeholder="ДО 3000">
+          </p>
+          <p>
+            <input type="range" name="slider-min" id="filter-slider-min">
+            <input type="range" name="slider-max" id="filter-slider-max">
+          </p>
+          <button type="submit">Показать</button>
+        </fieldset>
+      </form>
+      <section>
+        <h2>Блок сортировки</h2>
+        <p>Найдено: 3</p>
+        <p>Сортировка:</p>
+        <ul>
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По рейтингу</a></li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#"><img src="img/icons/icon-up-dir.svg" width="11" height="10" alt="Сортировка вверх"></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icons/icon-down-dir.svg" width="11" height="10" alt="Сортировка вниз"></a>
+          </li>
+        </ul>
+      </section>
+    </section>
+
+    <section>
+      <h2>Результаты</h2>
+      <article>
+        <ul>
+          <li>
+            <img src="img/amara-resort-spa.jpg" width="135" height="90" alt="Amara Resort & SPA отель">
+            <h3><a href="#">Amara Resort & Spa</a></h3>
+            <ul>
+              <li>
+                <img src="img/icons/star.svg" width="19" height="17" alt="Иконка звездочки">
+              </li>
+              <li>
+                <img src="img/icons/star.svg" width="19" height="17" alt="Иконка звездочки">
+              </li>
+              <li>
+                <img src="img/icons/star.svg" width="19" height="17" alt="Иконка звездочки">
+              </li>
+              <li>
+                <img src="img/icons/star.svg" width="19" height="17" alt="Иконка звездочки">
+              </li>
+            </ul>
+            <p>Гостиница</p>
+            <p>От 4000 Р.</p>
+            <p><a href="#">Подробнее</a></p>
+            <p><a href="#">Забронировать</a></p>
+            <p>Рейтинг: 8,5</p>
+          </li>
+          <li>
+            <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Desert Quail Inn мотель">
+            <h3><a href="#">Desert Quail Inn</a></h3>
+            <ul>
+              <li>
+                <img src="img/icons/star.svg" width="19" height="17" alt="Иконка звездочки">
+              </li>
+              <li>
+                <img src="img/icons/star.svg" width="19" height="17" alt="Иконка звездочки">
+              </li>
+              <li>
+                <img src="img/icons/star.svg" width="19" height="17" alt="Иконка звездочки">
+              </li>
+            </ul>
+            <p>Мотель</p>
+            <p>От 3000 Р.</p>
+            <p><a href="#">Подробнее</a></p>
+            <p><a href="#">Забронировать</a></p>
+            <p>Рейтинг: 8,9</p>
+          </li>
+          <li>
+            <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo апартаменты">
+            <h3><a href="#">Villas at Poco Diablo</a></h3>
+            <ul>
+              <li>
+                <img src="img/icons/star.svg" width="19" height="17" alt="Иконка звездочки">
+              </li>
+              <li>
+                <img src="img/icons/star.svg" width="19" height="17" alt="Иконка звездочки">
+              </li>
+            </ul>
+            <p>Апартаменты</p>
+            <p>От 2000 Р.</p>
+            <p><a href="#">Подробнее</a></p>
+            <p><a href="#">Забронировать</a></p>
+            <p>Рейтинг: 9,2</p>
+          </li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <section>
+      <h2>Контакты</h2>
+      <p>#VISITSEDONA</p>
+      <p><a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a></p>
+    </section>
+
+    <section>
+      <h2>Наши соц.сети</h2>
+      <ul>
+        <li>
+          <a href="https://www.youtube.com/"><img src="img/icons/twitter-icon.svg" width="46" height="48" alt="Иконка твиттера"></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icons/fb-icon.svg" width="46" height="48" alt="Иконка фейсбука"></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icons/youtube-icon.svg" width="46" height="48" alt="Икона ютуба"></a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Переход на лендинг курса</h2>
+      <p>Website by</p>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/icons/logo-htmlacademy.svg" width="115" height="41"
+          alt="Логотип Академии"></a>
+    </section>
+  </footer>
+</body>
+
+</html>
