@@ -632,7 +632,7 @@ a.sort-by-price {
   width: 1200px;
   margin: 0 auto;
   display: grid;
-  justify-items: left-top;
+  justify-items: top;
   grid-template-columns: repeat(4,max-content);
   grid-template-rows: repeat(3,max-content);
 }
