@@ -1623,7 +1623,7 @@ body .active-on-page:active {
 
 }
 
-body ::-moz-placeholder, :-moz-placeholder {
+input::-moz-placeholder, :-moz-placeholder {
   opacity: 1;
 }
 
