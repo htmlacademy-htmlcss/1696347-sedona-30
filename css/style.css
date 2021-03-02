@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
 /* Variables */
 :root {
@@ -706,6 +713,7 @@ body {
   padding: 0;
   padding-left: 9px;
   margin-left: 22px;
+  padding-top: 3px;
 
   font: inherit;
   color: var(--basic-dark);
@@ -720,6 +728,7 @@ body {
   box-sizing: border-box;
 }
 
+
 .search-form-input.search-departure-date-input {
   margin-left: 18px;
 }
@@ -729,6 +738,7 @@ body {
   width: 36px;
   height: 38px;
   padding: 0;
+  padding-top: 2px;
   margin: 0;
   margin-top: 3px;
   text-align: center;
@@ -749,6 +759,7 @@ body {
   font-weight: 700;
   color: var(--basic-dark);
 
+  margin-top: 4px;
   background-color: transparent;
 }
 
@@ -816,6 +827,7 @@ body {
   position: absolute;
   outline: none;
   border: none;
+  background-color: transparent;
 }
 
 .search-form-calendar-arrival {
@@ -1529,6 +1541,22 @@ a.sort-by-price {
   text-align: center;
 }
 
+.number-of-adults::-webkit-input-placeholder, .number-of-children::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.number-of-adults::-moz-placeholder, .number-of-children::-moz-placeholder {
+  text-align: center;
+}
+
+.number-of-adults:-ms-input-placeholder, .number-of-children:-ms-input-placeholder {
+  text-align: center;
+}
+
+.number-of-adults::-ms-input-placeholder, .number-of-children::-ms-input-placeholder {
+  text-align: center;
+}
+
 .greeting-heading,
 .greeting-text,
 .features-item,
@@ -1593,6 +1621,10 @@ body .active-on-page:active {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 
+}
+
+body ::-moz-placeholder, :-moz-placeholder {
+  opacity: 1;
 }
 
 @-webkit-keyframes searchFormAnimation {
