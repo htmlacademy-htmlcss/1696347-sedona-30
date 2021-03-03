@@ -18,6 +18,9 @@ searchFormButton.addEventListener("click", () => {
     searchFormSection.classList.remove("hidden");
     searchFormSection.classList.add("search-form-animation");
   }
+  else {
+    searchFormSection.classList.add("hidden");
+  }
 
 });
 

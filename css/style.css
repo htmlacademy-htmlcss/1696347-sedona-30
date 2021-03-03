@@ -5,7 +5,6 @@
 * Browsers: last 4 version
 */
 
-
 /* Variables */
 :root {
   --basic-dark: #000000;
@@ -176,6 +175,7 @@ body {
   vertical-align: middle;
   margin-top: 15px;
   margin-bottom: 15px;
+  max-width: 250px;
 }
 
 .nav-list a:hover,
@@ -203,18 +203,12 @@ body {
   margin-right: 72px;
 }
 
-.main-header .logo::before {
-  content: "";
+.main-header .logo {
   position: absolute;
   top: 0px;
   left: 530px;
   width: 138px;
   height: 70px;
-  background: url("../img/icons/logo.svg") 0 0 no-repeat;
-}
-
-.main-header .logo:focus::before {
-  opacity: 0.7;
 }
 
 /*Main content*/
@@ -478,6 +472,7 @@ body {
 
 .form-activate:active {
   background-color: var(--click-dark);
+  color: var(--basic-light-opacity);
 }
 
 .search-hotel-wrapper {
@@ -608,6 +603,10 @@ body {
 
 .socials-list .social-item:active {
   background-color: var(--click-light);
+}
+
+.socials-list .social-item:active img {
+  opacity: 0.3;
 }
 
 /*Footer copyright*/
@@ -940,6 +939,10 @@ body {
 
 }
 
+.catalog-filter fieldset {
+  word-break: break-all;
+}
+
 .infrastructure-list,
 .home-type-list {
   margin-top: 25px;
@@ -961,6 +964,7 @@ body {
   margin-bottom: 25px;
   padding-left: 16px;
 
+  word-break: break-all;
   width: -webkit-max-content;
 
   width: -moz-max-content;
@@ -971,10 +975,12 @@ body {
 
 .infrastructure-list label {
   margin-top: 2px;
+  max-width: 215px;
 }
 
 .home-type-list label {
   margin-left: -2px;
+  max-width: 150px;
 }
 
 .form-checkbox+label::before {
@@ -1000,22 +1006,21 @@ body {
   position: absolute;
 }
 
-.form-checkbox.disable+label {
-  color: var(--disabled-color);
+.form-checkbox:focus+label::before,
+.form-checkbox:active+label::before {
+  opacity: 0.5;
 }
 
-.form-checkbox.disable:checked+label {
-  color: var(--disabled-color);
-}
-
-.form-checkbox.disable+label::before {
+.form-checkbox:disabled+label::before {
   background-image: url("../img/icons/checkbox-off-disabled.svg");
   color: var(--disabled-color);
+  opacity: 1;
 }
 
-.form-checkbox.disable:checked+label::before {
+.form-checkbox:disabled:checked+label::before {
   background-image: url("../img/icons/checkbox-on-disabled.svg");
   color: var(--disabled-color);
+  opacity: 1;
 }
 
 .home-type-list li .form-checkbox+label::before,
@@ -1024,10 +1029,7 @@ body {
 
 }
 
-.form-checkbox:focus+label::before,
-.form-checkbox:active+label::before {
-  opacity: 0.5;
-}
+
 
 .filter-section fieldset {
   border: none;
@@ -1037,6 +1039,7 @@ body {
 
 .filter-section .infrastructure-field {
   margin-left: -1px;
+  max-width: 255px;
 }
 
 .filter-section .home-type-field {
@@ -1208,6 +1211,10 @@ body {
   max-width: 204px;
 }
 
+.catalog-form {
+  word-break: break-all;
+}
+
 .catalog-form-submit {
   max-width: 138px;
 
@@ -1336,8 +1343,8 @@ a.sort-by-price {
   fill: var(--basic-dark);
 }
 
-.sort-up-dir:active path,
-.sort-down-dir:active path {
+.sort-by-category a:active>.sort-up-dir path,
+.sort-by-category a:active>.sort-down-dir path {
   fill: var(--blue);
 }
 
@@ -1355,8 +1362,7 @@ a.sort-by-price {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding: 30px 71px 30px 73px;
-
+  padding: 30px 71px 20px 73px;
 
   text-align: start;
   border-bottom: 1px solid var(--input-border);
@@ -1364,6 +1370,7 @@ a.sort-by-price {
 
 .hotel-item .hotel-item-content {
   margin-left: 29px;
+  word-break: break-all;
 }
 
 .hotel-item-image {
@@ -1371,6 +1378,7 @@ a.sort-by-price {
   height: 90px;
   -o-object-fit: contain;
   object-fit: contain;
+  margin-bottom: 10px;
 }
 
 .hotel-item-content .hotel-name {
@@ -1378,7 +1386,6 @@ a.sort-by-price {
   line-height: 26px;
   margin-bottom: 7px;
   margin-top: -6px;
-  max-height: 152px;
   max-width: 760px;
 }
 
@@ -1453,6 +1460,7 @@ a.sort-by-price {
 
 .results-section .button:active {
   background-color: var(--click-dark);
+  color: var(--basic-light-opacity);
 }
 
 .results-section .button-light:active,
@@ -1498,9 +1506,7 @@ a.sort-by-price {
 }
 
 .rating-text {
-  width: 110px;
-  height: 27px;
-
+  padding: 3px 12px 3px 15px;
   display: -webkit-box;
 
   display: -ms-flexbox;
@@ -1520,6 +1526,26 @@ a.sort-by-price {
 }
 
 /*Text align*/
+
+.number-of-adults::-webkit-input-placeholder,
+.number-of-children::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.number-of-adults::-moz-placeholder,
+.number-of-children::-moz-placeholder {
+  text-align: center;
+}
+
+.number-of-adults:-ms-input-placeholder,
+.number-of-children:-ms-input-placeholder {
+  text-align: center;
+}
+
+.number-of-adults::-ms-input-placeholder,
+.number-of-children::-ms-input-placeholder {
+  text-align: center;
+}
 
 .number-of-adults::-webkit-input-placeholder,
 .number-of-children::-webkit-input-placeholder {
@@ -1597,7 +1623,8 @@ body .active-on-page:active {
   overflow: hidden;
 }
 
-.disable {
+.disable,
+:disabled {
   color: var(--disabled-color);
 }
 
@@ -1623,7 +1650,8 @@ body .active-on-page:active {
 
 }
 
-input::-moz-placeholder, :-moz-placeholder {
+input::-moz-placeholder,
+:-moz-placeholder {
   opacity: 1;
 }
 
