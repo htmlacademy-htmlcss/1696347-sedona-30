@@ -20,6 +20,7 @@ searchFormButton.addEventListener("click", () => {
   }
   else {
     searchFormSection.classList.add("hidden");
+    searchFormSection.classList.remove("search-form-animation");
   }
 
 });
